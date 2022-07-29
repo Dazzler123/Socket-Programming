@@ -11,6 +11,6 @@ public class ClientApp {
 
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
         printWriter.println("Hello there how are u ?");
-
+        printWriter.flush();
     }
 }
