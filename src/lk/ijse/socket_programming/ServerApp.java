@@ -22,5 +22,6 @@ public class ServerApp {
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String clientMessage = bufferedReader.readLine();
 
+        System.out.println("Client : " + clientMessage);
     }
 }
