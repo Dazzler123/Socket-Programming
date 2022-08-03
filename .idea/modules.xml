@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FX_UI_Implementation/FX_UI_Implementation.iml" filepath="$PROJECT_DIR$/FX_UI_Implementation/FX_UI_Implementation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Socket_Programming.iml" filepath="$PROJECT_DIR$/Socket_Programming.iml" />
     </modules>
   </component>
