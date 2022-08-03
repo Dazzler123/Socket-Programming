@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ClientFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="440.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <Label layoutX="15.0" layoutY="9.0" text="Client">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtTextArea" layoutX="14.0" layoutY="61.0" prefHeight="306.0" prefWidth="753.0" />
+      <TextField fx:id="txtMessageHere" layoutX="15.0" layoutY="388.0" prefHeight="31.0" prefWidth="660.0" promptText="Type your message here..." />
+      <Button layoutX="685.0" layoutY="388.0" mnemonicParsing="false" onAction="#btnSendMessage" prefHeight="31.0" prefWidth="82.0" text="Send" />
+   </children>
 </AnchorPane>
