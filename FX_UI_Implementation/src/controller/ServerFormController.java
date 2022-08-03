@@ -26,10 +26,10 @@ public class ServerFormController {
         new Thread(() -> {
             try {
                 serverSocket = new ServerSocket(PORT);
-                System.out.println("Server Started..");
+                txtTextArea.appendText("Server Started..");
                 accept = serverSocket.accept();
-                System.out.println("Client Connected.");
-                System.out.println("============================================");
+                txtTextArea.appendText("\nClient Connected.");
+                txtTextArea.appendText("\n============================================");
 
                 dataOutputStream = new DataOutputStream(accept.getOutputStream());
                 dataInputStream = new DataInputStream(accept.getInputStream());
